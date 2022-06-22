@@ -1,0 +1,45 @@
+create table TEAM
+  2  (
+  3  name varchar(50) primary key,
+  4  city varchar(50) not null,
+  5  coach varchar(50) not null,
+  6  PID int not null
+  7  );
+
+ create table PLAYER(
+  2  playerID int primary key,
+  3  name varchar(50) not null,
+  4  position varchar(10) not null,
+  5  skill int not null,
+  6  Tname varchar(50) references TEAM181(name),
+  7  from_date date
+  8  );
+
+alter table TEAM181 add team_fk foreign key(PID) references PLAYER181(playerID);
+
+create table INJURY_RECORDS(
+  2  inj_date date not null,
+  3  severity_level int not null,
+  4  description varchar(50),
+  5  PID int,
+  6  primary key(description,PID),
+  7  foreign key(PID) references PLAYER181(playerID)
+  8  );
+
+create table GAME(
+  2  host varchar(50) primary key,
+  3  guest varchar(50) primary key,
+  4  game_date date not null,
+  5  score int not null,
+  6  foreign key(host) references TEAM181(name),
+  7  foreign key(host) references TEAM181(name),
+  8  );
+
+*first add data to PLAYER, dont add value for Tname 
+	insert into player(playerID,name,position,skill,from_date) values(1,'virat','rightwing',10,'24-jul-2022');
+*next, insert values into TEAM
+	ALSO NOTE PLAYERid AND PID SHOULD BE SAME 
+	SAME FOR HOST AND GUEST, TEAM NAME SHOULD BE SAME 
+	SAME IN INJURY_RECORDS, PLAYERid AND pid SHOULD BE SAME
+
+END TW1

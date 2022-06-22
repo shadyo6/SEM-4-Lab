@@ -1,0 +1,53 @@
+1.The special method __init__ is called 
+(i)when a class is created
+(ii)when an object is created 
+(iii)can be (i) or (ii)
+(iv)None of the above
+
+2.self is a reference to the object
+(i)True 
+(ii)False
+
+3.A class can contain only one constructor
+(i)True 
+(ii)False
+
+4.________is the way to combine simple objects into more complex ones.
+(i)Polymorphism
+(ii)Object Composition 
+(iii)Encapsulation
+(iv)Inheritance
+
+5.Encapsulation is also known as
+(i)Inheritance
+(ii)Polymorphism
+(iii)Data Hiding 
+(iv)Has-A relationship
+
+6.You can access private attributes indirectly through
+(i)public methods
+(ii)properties
+(iii)both 
+(iv)None of the above
+
+7.The "__"(2 double underscore) identify that the attribute is
+(i)public
+(ii)protected
+(iii)private 
+(iv)friend
+
+8.The getter and setter methods are also respectively called accessor and mutator
+(i)True
+(ii)False
+
+9.The ________ annotation tells Python that the method that follows, gets the value for the property 
+(i)@accessor
+(ii)@get  
+(iii)@property  
+(iv)Any of the above
+
+10.In python the subclass can _____ a method from the superclass
+(i)Overload
+(ii)Override 
+(iii)Both (i) and (ii)
+(iv) None of the above
