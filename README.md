@@ -5,7 +5,6 @@
  (__  ) / / / /_/ / /_/ / /_/ / (__  )  / /  /  __/ /_/ / /_/ /
 /____/_/ /_/\__,_/\__,_/\__, / /____/  /_/   \___/ .___/\____/ 
                        /____/                   /_/                                     
-</pre>
 We trust you have received the usual lecture from the local System Administrator. 
 It usually boils down to these three things:
 
@@ -18,3 +17,4 @@ This repo is contributed and maintained by
 -stardust
 
 if you are a contributer please feel free to add your name to the list
+</pre>
