@@ -1,0 +1,39 @@
+Experiment 1
+contents
+1. Problemdefinition
+2. Aim of the experiment
+3. Theory (brief explaination of the algorithm)
+4. Algorithm
+5. Tracing
+6. Analysis (Discuss all 3 cases with input for each case)
+7. Source code
+8. Sample input and output of the algorithm
+9.Output of the experiment
+10.Conclusion & Reference
+
+Experiment 2
+contents
+1. Problemdefinition
+2. Aim of the experiment
+3. Theory (brief explaination of the algorithm)
+4. Algorithm
+5. Tracing
+6. Recursive Tree
+7. Analysis (Discuss all 3 cases with input for each case)
+8. Source code
+9. Sample input and output of the algorithm
+10.Output of the experiment
+11.Conclusion & Reference
+
+Experiment 3
+contents
+1. Problemdefinition
+2. Aim of the experiment
+3. Theory (brief explaination of the algorithm)
+4. Algorithm
+5. Tracing
+6. Analysis (Discuss all 3 cases with input for each case)
+7. Source code
+8. Sample input and output of the algorithm
+9.Output of the experiment
+10.Conclusion & Reference
