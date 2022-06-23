@@ -1,10 +1,11 @@
+<pre>
          __              __     _                              
    _____/ /_  ____ _____/ /_  _( )_____   ________  ____  ____ 
   / ___/ __ \/ __ `/ __  / / / /// ___/  / ___/ _ \/ __ \/ __ \
  (__  ) / / / /_/ / /_/ / /_/ / (__  )  / /  /  __/ /_/ / /_/ /
 /____/_/ /_/\__,_/\__,_/\__, / /____/  /_/   \___/ .___/\____/ 
-                       /____/                   /_/                    
-
+                       /____/                   /_/                                     
+</pre>
 We trust you have received the usual lecture from the local System Administrator. 
 It usually boils down to these three things:
 
