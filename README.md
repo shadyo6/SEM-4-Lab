@@ -1,4 +1,5 @@
-<pre>        ___________________________________________________________________________________________________________
+<pre>      
+             ___________________________________________________________________________________________________________
             /                                                                                                            \
            |    _____________________________________________________________________________________________________     |
            |   |                                                                                                     |    |
@@ -18,8 +19,8 @@
            |   |           #2) Think before you copy, upon getting caught don't compromise the server.               |    |
            |   |           #3) With great power comes great responsibility.                                          |    |
            |   |                                                                                                     |    |
-           |   |  username: software                                                                                 |    | 
-           |   |  password:                                                                                          |    |
+           |   |  username: admin                                                                                    |    | 
+           |   |  password: admin                                                                                    |    |
            |   |                                                                                                     |    | 
            |   |  software@10.10.1.12:~$ cd software/Fedora/SEM-4/                                                   |    |
            |   |  software@10.10.1.12 software/Fedora/SEM-4:~$ ls -l.                                                |    |
