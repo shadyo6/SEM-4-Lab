@@ -1,0 +1,75 @@
+create table Flights(
+	FlightNo int primary key,
+	fromPlace varchar(15) not null,
+	toPlace varchar(15) not null,
+	distance int not null,
+	departs_at date not null,
+	arrives_at date not null,
+	price real not null
+);
+
+insert into Flights values(255,'bangalore','frankfut',200,'01-aug-11','01-aug-11',5000.00);
+insert into Flights values(256,'bangalore','frankfut',200,'01-aug-11','01-aug-11',8000.00);
+insert into Flights values(257,'bangalore','delhi',200,'01-aug-11','01-aug-11',5000.00);
+insert into Flights values(258,'bangalore','delhi',200,'01-aug-11','01-aug-11',6000.00);
+insert into Flights values(259,'bangalore','mangalore',200,'01-aug-11','01-aug-11',8000.00);
+
+create table Certified(
+	Eid int references Employees181(Eid),
+	Aid int references Aircrafts181(Aid),
+	primary key(Eid,Aid)
+);
+
+create table Employees(
+	Eid int primary key,
+	Ename varchar(15) not null,
+	salary real not null
+);
+
+create table Aircrafts(
+	Aid int primary key,
+	Aname varchar(15) not null,
+	range int not null
+);
+
+insert into Aircrafts values(685,'boeing15',1000);
+insert into Aircrafts values(686,'boeing10',2000);
+insert into Aircrafts values(687,'skytrain',1000);
+insert into Aircrafts values(688,'avenger',100);
+insert into Aircrafts values(689,'thor',5000);
+
+
+insert into Employees values(101,'asha',90000);
+insert into Employees values(102,'arun',85000);
+insert into Employees values(103,'anand',3000);
+insert into Employees values(104,'ramya',4000);
+
+
+insert into Certified values(101,685);
+insert into Certified values(101,686);
+insert into Certified values(101,687);
+insert into Certified values(101,688);
+insert into Certified values(102,685);
+insert into Certified values(103,686);
+insert into Certified values(103,687);
+
+/*INSTRUCTIONS*/
+* FIRST CREATE AND INSERT INTO FLIGHTS TABLE
+* THEN CREATE AIRCRAFTS AND EMPLOYEE TABLE 
+* INSERT VALUES INTO AIRCRAFTS AND EMPLOYEE
+* THEN CREATE CERTIFIED TABLE AND INSERT VALUES INTO CERTIFIED
+* TO VERIFY THE  VALUES ARE INSERTED, USE select * from <tablename>;
+
+Queries can be asked:
+* select * from Flights181 where fromPlace = 'bangalore';
+* select COUNT(FlightNo) from Flights181 where(fromPlace = 'bangalore' and toPlace = 'frankfut');
+* select * from Aircrafts181 where (range >= 1000 and range <= 1500); OR 
+  select * from Aircrafts181 where range between 1000 and 1500;
+* select eid,ename from employees181 where(salary = 3000 or salary = 4000 or salary = 5000); OR 
+  select eid, ename from employees181 where(salary in (3000,4000,5000,6000));
+* select aid,aname from aircrafts181 where (aname like '%er'); or 
+  select aid,aname from aircrafts181 where (aname like '%e%'); or 
+  select aid,aname from aircrafts181 where (aname like '%B'); or
+  select * from aircrafts181 where (aname like '_____%');
+
+	
