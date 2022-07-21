@@ -1,0 +1,35 @@
+create table salesman0181 (
+	salesman_id int primary key,
+	name varchar(10),
+	city varchar(10),
+	commission real
+);
+
+create table customers0181 (
+	customer_id int primary key,
+	cust_name varchar(10),
+	city varchar(10),
+	grade int,
+	salesman_id references salesman0181(salesman_id) on delete set null
+);
+
+create table orders0181 (
+	order_no int primary key,
+	purchase_amt real,
+	order_date date,
+	customer_id references customers0181(customer_id) on delete cascade,
+	salesman_id references salesman0181(salesman_id) on delete cascade
+);
+
+
+insert into salesman0181 values(&salesman_id,'&name','&city',&commission);
+insert into customers0181 values(&customer_id,'&cust_name','&city',&grade,&salesman_id);
+insert into orders0181 values(&order_no,&purchase_amt,'&order_date',&customer_id,&salesman_id);
+
+
+sql Queries:
+1. select grade,count(distinct(customer_id)) from customers0181 group by grade having grade > (select avg(grade) from customers0181 where city = 'bangalore');
+2. select salesman_id,name from salesman0181 where 1 < (select count(*) from customers0181 where salesman_id = salesman0181.salesman_id);
+3. select name,cust_name from salesman0181 s,customers0181 c,orders0181 o where s.salesman_id=o.salesman_id and o.customer_id=c.customer_id and o.purchase_amt>4000; 
+4. delete from salesman0181 where salesman_id = 1000;
+
