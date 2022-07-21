@@ -44,5 +44,4 @@ void main()
     for(i=1;i<=n;i++)
         if(i!=v)
             printf("%d->%d,cost=%d\n",v,i,dist[i]);
-
 }
